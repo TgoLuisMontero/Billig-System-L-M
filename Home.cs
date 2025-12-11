@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using CapaEntidad;
+//using CapaEntidad;
 using FontAwesome.Sharp;
 
 namespace Billig_System_L_M

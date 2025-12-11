@@ -48,11 +48,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.editText_Stock = new System.Windows.Forms.NumericUpDown();
+            this.txtStock = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tbProductos)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.editText_Stock)).BeginInit();
             this.SuspendLayout();
             // 
             // label10
@@ -61,9 +60,9 @@
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(17, 36);
+            this.label10.Location = new System.Drawing.Point(70, 44);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(144, 33);
+            this.label10.Size = new System.Drawing.Size(96, 22);
             this.label10.TabIndex = 20;
             this.label10.Text = "Producto:";
             // 
@@ -75,12 +74,13 @@
             this.tbProductos.Name = "tbProductos";
             this.tbProductos.RowHeadersWidth = 62;
             this.tbProductos.RowTemplate.Height = 28;
-            this.tbProductos.Size = new System.Drawing.Size(1011, 353);
+            this.tbProductos.Size = new System.Drawing.Size(1011, 440);
             this.tbProductos.TabIndex = 0;
+            this.tbProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbProductos_CellContentClick);
             // 
             // txtProductoBuscar
             // 
-            this.txtProductoBuscar.Location = new System.Drawing.Point(108, 36);
+            this.txtProductoBuscar.Location = new System.Drawing.Point(172, 39);
             this.txtProductoBuscar.Name = "txtProductoBuscar";
             this.txtProductoBuscar.Size = new System.Drawing.Size(615, 30);
             this.txtProductoBuscar.TabIndex = 21;
@@ -95,7 +95,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(381, 36);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1014, 82);
+            this.groupBox2.Size = new System.Drawing.Size(1014, 97);
             this.groupBox2.TabIndex = 56;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Buscar";
@@ -108,7 +108,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(378, 139);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1017, 382);
+            this.groupBox1.Size = new System.Drawing.Size(1017, 469);
             this.groupBox1.TabIndex = 55;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Productos:";
@@ -132,13 +132,14 @@
             this.btn_Eliminar.IconColor = System.Drawing.Color.White;
             this.btn_Eliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Eliminar.IconSize = 30;
-            this.btn_Eliminar.Location = new System.Drawing.Point(24, 482);
+            this.btn_Eliminar.Location = new System.Drawing.Point(24, 509);
             this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(294, 39);
+            this.btn_Eliminar.Size = new System.Drawing.Size(294, 45);
             this.btn_Eliminar.TabIndex = 75;
             this.btn_Eliminar.Text = "Eliminar";
             this.btn_Eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_Eliminar.UseVisualStyleBackColor = false;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
             // 
             // btn_Modificar
             // 
@@ -150,13 +151,14 @@
             this.btn_Modificar.IconColor = System.Drawing.Color.White;
             this.btn_Modificar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Modificar.IconSize = 30;
-            this.btn_Modificar.Location = new System.Drawing.Point(24, 436);
+            this.btn_Modificar.Location = new System.Drawing.Point(24, 457);
             this.btn_Modificar.Name = "btn_Modificar";
-            this.btn_Modificar.Size = new System.Drawing.Size(294, 40);
+            this.btn_Modificar.Size = new System.Drawing.Size(294, 46);
             this.btn_Modificar.TabIndex = 74;
             this.btn_Modificar.Text = "Modificar";
             this.btn_Modificar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_Modificar.UseVisualStyleBackColor = false;
+            this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
             // 
             // btn_Limpiar
             // 
@@ -168,13 +170,14 @@
             this.btn_Limpiar.IconColor = System.Drawing.Color.White;
             this.btn_Limpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Limpiar.IconSize = 30;
-            this.btn_Limpiar.Location = new System.Drawing.Point(24, 388);
+            this.btn_Limpiar.Location = new System.Drawing.Point(24, 403);
             this.btn_Limpiar.Name = "btn_Limpiar";
-            this.btn_Limpiar.Size = new System.Drawing.Size(294, 42);
+            this.btn_Limpiar.Size = new System.Drawing.Size(294, 48);
             this.btn_Limpiar.TabIndex = 73;
             this.btn_Limpiar.Text = "Limpiar";
             this.btn_Limpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_Limpiar.UseVisualStyleBackColor = false;
+            this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
             // 
             // btn_Agregar
             // 
@@ -186,13 +189,14 @@
             this.btn_Agregar.IconColor = System.Drawing.Color.White;
             this.btn_Agregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Agregar.IconSize = 30;
-            this.btn_Agregar.Location = new System.Drawing.Point(24, 348);
+            this.btn_Agregar.Location = new System.Drawing.Point(24, 357);
             this.btn_Agregar.Name = "btn_Agregar";
-            this.btn_Agregar.Size = new System.Drawing.Size(294, 34);
+            this.btn_Agregar.Size = new System.Drawing.Size(294, 40);
             this.btn_Agregar.TabIndex = 72;
             this.btn_Agregar.Text = "Agregar";
             this.btn_Agregar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_Agregar.UseVisualStyleBackColor = false;
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
             // 
             // label8
             // 
@@ -216,9 +220,9 @@
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(24, 300);
+            this.txtPrecio.Location = new System.Drawing.Point(25, 309);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(127, 26);
+            this.txtPrecio.Size = new System.Drawing.Size(120, 26);
             this.txtPrecio.TabIndex = 68;
             // 
             // txtDescripcion
@@ -239,35 +243,35 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(20, 275);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(133, 22);
+            this.label7.Size = new System.Drawing.Size(110, 38);
             this.label7.TabIndex = 65;
-            this.label7.Text = "Precio Unitario:";
+            this.label7.Text = "Precio:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(169, 275);
+            this.label6.Location = new System.Drawing.Point(164, 275);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(149, 22);
+            this.label6.Size = new System.Drawing.Size(68, 25);
             this.label6.TabIndex = 64;
-            this.label6.Text = "Stock (Cantidad):";
+            this.label6.Text = "Stock:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(26, 215);
+            this.label5.Location = new System.Drawing.Point(20, 212);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 33);
+            this.label5.Size = new System.Drawing.Size(120, 25);
             this.label5.TabIndex = 63;
             this.label5.Text = "Descripcion:";
             // 
@@ -275,11 +279,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(20, 150);
+            this.label4.Location = new System.Drawing.Point(26, 147);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 33);
+            this.label4.Size = new System.Drawing.Size(96, 25);
             this.label4.TabIndex = 62;
             this.label4.Text = "Producto:";
             // 
@@ -287,20 +291,20 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(20, 87);
+            this.label2.Location = new System.Drawing.Point(26, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 33);
+            this.label2.Size = new System.Drawing.Size(119, 25);
             this.label2.TabIndex = 61;
             this.label2.Text = "Codigo (ID):";
             // 
-            // editText_Stock
+            // txtStock
             // 
-            this.editText_Stock.Location = new System.Drawing.Point(173, 300);
-            this.editText_Stock.Name = "editText_Stock";
-            this.editText_Stock.Size = new System.Drawing.Size(145, 26);
-            this.editText_Stock.TabIndex = 22;
+            this.txtStock.Location = new System.Drawing.Point(169, 309);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(149, 26);
+            this.txtStock.TabIndex = 76;
             // 
             // frmProductos
             // 
@@ -308,7 +312,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(1438, 630);
-            this.Controls.Add(this.editText_Stock);
+            this.Controls.Add(this.txtStock);
             this.Controls.Add(this.btn_Eliminar);
             this.Controls.Add(this.btn_Modificar);
             this.Controls.Add(this.btn_Limpiar);
@@ -328,11 +332,11 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmProductos";
             this.Text = "frmProductos";
+            this.Load += new System.EventHandler(this.frmProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tbProductos)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.editText_Stock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,6 +364,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown editText_Stock;
+        private System.Windows.Forms.TextBox txtStock;
     }
 }

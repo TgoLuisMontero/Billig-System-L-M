@@ -62,9 +62,9 @@
             this.panel1.Controls.Add(this.editText_User);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(323, 1);
+            this.panel1.Location = new System.Drawing.Point(322, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(454, 333);
+            this.panel1.Size = new System.Drawing.Size(474, 333);
             this.panel1.TabIndex = 0;
             // 
             // editText_Password
@@ -212,7 +212,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 335);
+            this.ClientSize = new System.Drawing.Size(795, 335);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

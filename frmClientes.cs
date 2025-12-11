@@ -154,6 +154,6 @@ namespace Billig_System_L_M
             {
                 MessageBox.Show("Ocurrio un error: " + ex.Message);
             }
-        } 
+        }
     }
 }
