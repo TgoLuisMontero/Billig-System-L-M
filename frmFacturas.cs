@@ -16,5 +16,10 @@ namespace Billig_System_L_M
         {
             InitializeComponent();
         }
+
+        private void frmFacturas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

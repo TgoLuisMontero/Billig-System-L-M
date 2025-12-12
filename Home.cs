@@ -47,7 +47,7 @@ namespace Billig_System_L_M
             formulario.TopLevel = false;
             formulario.FormBorderStyle = FormBorderStyle.None;
             formulario.Dock = DockStyle.Fill;
-            formulario.BackColor = Color.Red;
+            formulario.BackColor = Color.DarkRed;
             contenedor.Controls.Add(formulario);
             formulario.Show();
         }

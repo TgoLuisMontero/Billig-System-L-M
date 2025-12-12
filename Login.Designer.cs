@@ -62,17 +62,18 @@
             this.panel1.Controls.Add(this.editText_User);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(322, 1);
+            this.panel1.Location = new System.Drawing.Point(324, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(474, 333);
+            this.panel1.Size = new System.Drawing.Size(472, 333);
             this.panel1.TabIndex = 0;
             // 
             // editText_Password
             // 
+            this.editText_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editText_Password.Location = new System.Drawing.Point(81, 181);
             this.editText_Password.Name = "editText_Password";
             this.editText_Password.PasswordChar = '*';
-            this.editText_Password.Size = new System.Drawing.Size(344, 26);
+            this.editText_Password.Size = new System.Drawing.Size(344, 28);
             this.editText_Password.TabIndex = 12;
             // 
             // btn_Cancelar
@@ -149,34 +150,35 @@
             // 
             // editText_User
             // 
+            this.editText_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editText_User.Location = new System.Drawing.Point(81, 83);
             this.editText_User.Name = "editText_User";
-            this.editText_User.Size = new System.Drawing.Size(344, 26);
+            this.editText_User.Size = new System.Drawing.Size(344, 28);
             this.editText_User.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(81, 154);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(77, 153);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 20);
+            this.label2.Size = new System.Drawing.Size(113, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(77, 50);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(77, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 20);
+            this.label1.Size = new System.Drawing.Size(64, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "User:";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Red;
+            this.panel2.BackColor = System.Drawing.Color.DarkRed;
             this.panel2.Controls.Add(this.iconPictureBox1);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(-1, 1);
@@ -186,7 +188,7 @@
             // 
             // iconPictureBox1
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.Red;
+            this.iconPictureBox1.BackColor = System.Drawing.Color.DarkRed;
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Tags;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
